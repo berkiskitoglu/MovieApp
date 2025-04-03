@@ -245,6 +245,9 @@ main {
 #backtotop i:hover {
   color: #2e4c6d;
 }
+.container p {
+  text-align: center;
+}
 
 .counter {
   background: linear-gradient(to bottom, #fc997c 0%, #fc8b69 100%);
