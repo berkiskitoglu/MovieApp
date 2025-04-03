@@ -1,0 +1,196 @@
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Uygulaması</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div id="main-nav" class="container responsive">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Filmler</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Diziler</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a href="#" class="btn btn-secondary">Giriş Yap</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" onclick="displayMenu()">
+                <i class="fa fa-bars"> </i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <div class="content">
+          <h2>Hoş Geldiniz</h2>
+          <h3>
+            Milyonlarca film, dizi ve oyuncuyu keşfedin. Hemen keşfe çıkın!
+          </h3>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">Nasıl Çalışır?</h2>
+            <p>
+              Sevdiğiniz film ve dizileri izlemeye başlamak için aşağıdaki
+              adımları takip edin!
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="icon-box col-3">
+              <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+              <h3>Kayıt Ol</h3>
+              <p>
+                Ücretsiz hesabınızı birkaç adımda oluşturun ve geniş film & dizi
+                arşivine erişim sağlayın.
+              </p>
+            </div>
+            <div class="icon-box col-3">
+              <i class="fa-brands fa-buffer fa-3x"></i>
+              <h3>Bir Plan Seçin</h3>
+              <p>
+                Size en uygun abonelik planını seçerek kesintisiz film ve dizi
+                keyfini çıkarın.
+              </p>
+            </div>
+            <div class="icon-box col-3">
+              <i class="fa-solid fa-face-smile fa-3x"></i>
+              <h3>İzlemeye Başla</h3>
+              <p>
+                Favori film ve dizilerinizi istediğiniz zaman, istediğiniz
+                yerden izlemeye başlayın.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h3>En Yeni Filmleri ve Dizileri Anında İzleyin</h3>
+            <p>
+              En popüler filmleri ve en yeni dizileri çıkış yaptıkları an
+              izleyin. HD ve 4K görüntü kalitesiyle reklamsız bir deneyim
+              yaşayın.
+            </p>
+            <a href="#" class="btn btn-secondary">Özellikleri Gör</a>
+          </div>
+        </div>
+      </section>
+      <section id="movies">
+        <h2 class="section-title">Son Çıkan Filmler & TV Dizileri</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 card-container">
+              <div class="card">
+                <img
+                  class="card-image img-fluid"
+                  src="./images/poster-1.jpeg"
+                  alt="Star Wars"
+                />
+                <div class="card-body">
+                  <h2>Star Wars</h2>
+                  <p>
+                    Galaksiler arası savaşta Jedi ve Sith'lerin mücadelesine
+                    tanık olun.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Detaylar</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-container">
+              <div class="card">
+                <img
+                  class="card-image img-fluid"
+                  src="./images/poster-2.jpeg"
+                  alt="The Brain"
+                />
+                <div class="card-body">
+                  <h2>The Brain</h2>
+                  <p>
+                    Bir bilim insanının, insan beyninin gizemlerini çözme
+                    çabası.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Detaylar</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-container">
+              <div class="card">
+                <img
+                  class="card-image img-fluid"
+                  src="./images/poster-3.jpeg"
+                  alt="The Mummy"
+                />
+                <div class="card-body">
+                  <h2>The Mummy</h2>
+                  <p>
+                    Binlerce yıllık bir lanetin serbest kalmasıyla başlayan
+                    korku dolu macera.
+                  </p>
+                  <p>
+                    <button class="btn btn-primary">Detaylar</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul id="social-links">
+              <li><a href="" class="fab fa-facebook"></a></li>
+              <li><a href="" class="fab fa-twitter"></a></li>
+              <li><a href="" class="fab fa-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up fa-3x"></i>
+    </a>
+
+    <script>
+      function displayMenu() {
+        var link = document.getElementById("main-nav");
+        link.classList.toggle("responsive");
+      }
+    </script>
+  </body>
+</html>
